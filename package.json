@@ -1,0 +1,17 @@
+{
+  "name": "postgis-test",
+  "version": "1.0.0",
+  "description": "``` docker run --name some-postgis -e POSTGRES_PASSWORD=mysecretpassword -d mdillon/postgis docker run -it --link some-postgis:postgres --rm postgres \\     sh -c 'exec psql -h \"$POSTGRES_PORT_5432_TCP_ADDR\" -p \"$POSTGRES_PORT_5432_TCP_PORT\" -U postgres' ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "pg": "^6.4.0",
+    "sequelize": "^4.2.0"
+  }
+}
